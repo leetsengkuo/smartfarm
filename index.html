@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>農業物聯網 | https://stjosephtp.githubio.io/smartfarm</title>
+    <!--meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="lee_tsengkuo" content="Smartfarm-potted" />  
+    <link rel="Shortcut Icon" type="image/x-icon" href="icon/favicon.ico">  
+    <script>
+      addEventListener("load", function () {
+      	setTimeout(hideURLbar, 0);
+      }, false);
+      
+      function hideURLbar() {
+      	window.scrollTo(0, 1);
+      }
+    </script>
+
+    <script>
+      function get_sensor() {
+
+  $.ajax({
+      url: "/sensor",
+      method: "GET",
+      $("#Humidity").html(Jdata["hum"]+"%");
+    </script> 
+     
+    <!--//meta tags ends here-->
+    <!--booststrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <!--//booststrap end-->
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!--stylesheets-->
+    <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+    <!--//stylesheets-->
+   <!-- Web-Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Mada:200,300,400,500,600,700,900&amp;subset=arabic" rel="stylesheet">
+	<!-- //Web-Fonts -->
+
+  </head>
+  <body>
+    <div class="main-top" id="home">
+      <!-- header -->
+      <div class="headder-top">
+        <!-- nav -->
+        <nav >
+          <div id="logo">
+            <h1><a href="index.html">農業物聯網</a></h1>
+          </div>
+          <label for="drop" class="toggle">&#9776;</label>
+          <input type="checkbox" id="drop">
+          <ul class="menu mt-2">
+            <li class="active"><a href="index.html">首頁</a></li>
+            <li class="mx-lg-3 mx-md-2 my-md-0 my-1"><a href="#">關於我們</a></li> <!--about.html -->
+            <li><a href="#">服務</a></li> <!--service.html -->
+            <!-- <li class="mx-lg-3 mx-md-2 my-md-0 my-1"> -->
+              <!-- First Tier Drop Down -->
+              <!-- <label for="drop-2" class="toggle toogle-2">盆栽狀態 <span class="fa fa-angle-down" aria-hidden="true"></span> -->
+              <!-- </label> -->
+              <!-- <a href="#">盆裁狀態 <span class="fa fa-angle-down" aria-hidden="true"></span></a> -->
+              <!-- <input type="checkbox" id="drop-2"> -->
+              <!-- <ul> -->
+                <!-- <li><a href="gallery.html" class="drop-text">Gallery</a></li> -->
+                <!-- <li><a href="blog.html" class="drop-text">Blog</a></li> -->
+              <!-- </ul> -->
+            <!-- </li> -->
+            <li><a href="contact.html">聯絡我們</li>
+          </ul>
+        </nav>
+        <!-- //nav -->
+      </div>
+      <!-- //header -->
+      <!-- banner -->
+      <div class="main-banner text-center">
+        <div class="container">
+          <div class="style-banner">
+            <h4 class="mb-2">專題製作實作</h4>
+            <!-- <h5>一機在手，盆在你心</h5> -->
+          </div>
+          <div class="two-demo-button mt-md-4 mt-3">
+          <P></P>  
+          <marquee scrollamount="2" direction="up"><font size="3" color="#ffffff"> 成員 劉卓英｜洪義松｜羅烜玟｜李洺旭｜李增國 </font></marquee> 
+            <p> </p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- //banner -->
+    <!-- about -->
+    <!-- status -->
+    <section class="blog_w3ls py-5" id="why">
+    <div class="container py-xl-5">
+      <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">盆裁現況</h3>
+      <div class="row">
+        <!-- blog grid -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card border-0 med-blog">
+            <div class="card-header p-0">
+              <a href="single.html">
+                <img class="card-img-bottom" src="images/soil-icon.png" alt="soil status">
+              </a>
+            </div>
+            <div class="card-body border border-top-0">
+              <div class="mb-3">
+                <h5 class="blog-title card-title m-0">土壤濕度
+                </h5>
+                <div class="blog_w3icon">
+                 <!--  <span>
+                    瞭解植物的濕度情形</span> -->
+                </div>
+              </div>
+              <p>目前盆裁的濕度情形如下(100:乾燥，0~80正常)：</p>
+            </div>
+          </div>
+        </div>
+        <!-- //blog grid -->
+        <!-- blog grid -->
+        <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+          <div class="card border-0 med-blog">
+            <div class="card-header p-0">
+              <a href="single.html">
+                <img class="card-img-bottom" src="images/light-icon.png" alt="light status">
+              </a>
+            </div>
+            <div class="card-body border border-top-0">
+              <div class="mb-3">
+                <h5 class="blog-title card-title m-0">光照情形
+                </h5>
+                <div class="blog_w3icon">
+                  <!-- <span>
+                                      瞭解植物的光照情形</span> -->
+                </div>
+              </div>
+              <p>目前盆裁的光照情形如下：（按上方圖示進入調整）</p>
+            </div>
+          </div>
+        </div>
+        <!-- //blog grid -->
+        <!-- blog grid -->
+        <div class="col-lg-4 col-md-6 mt-lg-0 mt-5">
+          <div class="card border-0 med-blog">
+            <div class="card-header p-0">
+              <a href="single.html">
+                <img class="card-img-bottom" src="images/water-icon.png" alt="water status">
+              </a>
+            </div>
+            <div class="card-body border border-top-0">
+              <div class="mb-3">
+                <h5 class="blog-title card-title m-0">水位偵測
+                </h5>
+                <div class="blog_w3icon">
+                 <!--  <span>
+                    瞭解盆裁供水情形</span> -->
+                </div>
+              </div>
+              <p>目前盆裁的水位情形如下：（按上方圖示進入調整）</p>
+            </div>
+          </div>
+        </div>
+        <!-- //blog grid -->
+        <!-- blog grid -->
+        <div class="col-lg-4 col-md-6 mt-lg-0 mt-5">
+          <div class="card border-0 med-blog">
+            <div class="card-header p-0">
+              <a href="single.html">
+                <img class="card-img-bottom" src="images/wind-icon.png" alt="wind status">
+              </a>
+            </div>
+            <div class="card-body border border-top-0">
+              <div class="mb-3">
+                <h5 class="blog-title card-title m-0">風力偵測
+                </h5>
+                <div class="blog_w3icon">
+                 <!--  <span>
+                    瞭解盆裁供水情形</span> -->
+                </div>
+              </div>
+              <p>開啟風力運轉（請按上方圖示進行運轉）</p>
+            </div>
+          </div>
+        </div>
+        <!-- //blog grid -->
+        <!-- blog grid -->
+        <div class="col-lg-4 col-md-6 mt-lg-0 mt-5">
+          <div class="card border-0 med-blog">
+            <div class="card-header p-0">
+              <a href="single.html">
+                <img class="card-img-bottom" src="images/temp-icon.png" alt="temperature status">
+              </a>
+            </div>
+            <div class="card-body border border-top-0">
+              <div class="mb-3">
+                <h5 class="blog-title card-title m-0">環境溫度偵測
+                </h5>
+                <div class="blog_w3icon">
+                 <!--  <span>
+                    瞭解盆裁供水情形</span> -->
+                </div>
+              </div>
+              <p>目前盆裁所在的環境情形如下：（按上方圖示進入調整）</p>
+            </div>
+          </div>
+        </div>
+        <!-- //blog grid -->
+        <!-- blog grid -->
+        <div class="col-lg-4 col-md-6 mt-lg-0 mt-5">
+          <div class="card border-0 med-blog">
+            <div class="card-header p-0">
+              <a href="single.html">
+                <img class="card-img-bottom" src="images/falling-down-icon.jpg" alt="falling status">
+              </a>
+            </div>
+            <div class="card-body border border-top-0">
+              <div class="mb-3">
+                <h5 class="blog-title card-title m-0">盆裁傾倒偵測
+                </h5>
+                <div class="blog_w3icon">
+                 <!--  <span>
+                    瞭解盆裁供水情形</span> -->
+                </div>
+              </div>
+              <p>目前盆裁正常：（如有傾倒，會以Line通知）</p>
+            </div>
+          </div>
+        </div>
+        <!-- //blog grid -->
+       </div>
+    </div>
+  </section>
+    <!-- <section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="about">
+      <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+        <div class="row">
+		      <div class="col-lg-6 about-imgs-txt">
+             <img src="images/soil-icon.png" alt="soil" class="img-fluid">
+          </div>
+        <div class="col-lg-6 text-right about-two-grids">
+            <h3 class="mb-md-4 mb-sm-3 mb-3" text-align="text-center">土壤溫濕度</h3>
+            <div class="view-buttn mt-lg-5 mt-md-4 mt-3">
+              <a href="temp_hum.html" class=" scroll">了解更多</a>
+            </div>
+        </div>
+		    </div>
+        <div class="row_hum">
+      <div class="small-4 large-4 small-centered large-centered content-centered columns" data-intro="" data-position="top" data-step="6">
+        <h2>Humidity</h2><font color=red style="font-size: 30px;"><p id="Humidity"></p></font> -->
+        <!-- <度</h2><font color=red style="font-size: 30px;"><p id="Humidity"></p></font>
+      </div>
+    </section> -->
+    <!-- //about -->
+    <!-- light -->
+    <!-- <section class="collection py-lg-4 py-md-3 py-sm-3 py-3">
+      <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+        <h3 class="title mb-lg-5 mb-md-4 mb-sm-4 mb-3">照明偵測狀況</h3>
+        <--row -->
+        <!-- <div class="row"> -->
+         <!--  <div class="col-lg-7 col-md-6 collection-w3layouts">
+              <div class="view-buttn mt-lg-4 mt-3">
+              <a href="bulb.html" class="">了解更多</a>
+            </div>
+          </div> 
+          <div class="col-lg-5 col-md-6">
+            <img src="images/light-icon.png" alt="blub" class="img-fluid">
+          </div>
+        </div> -->
+        <!--// row -->
+      <!--   </div>
+      </div>
+    </section>  -->
+    <!-- //light -->
+    <!-- water -->
+    <!-- <section class="collection py-lg-4 py-md-3 py-sm-3 py-3">
+      <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+        <h3 class="title mb-lg-5 mb-md-4 mb-sm-4 mb-3">水位偵測狀況</h3> -->
+        <!--row -->
+        <!-- <div class="row"> -->
+         <!--  <div class="col-lg-7 col-md-6 collection-w3layouts">
+              <div class="view-buttn mt-lg-4 mt-3">
+              <a href="water.html" class="">了解更多</a>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6">
+            <img src="images/water-icon.png" alt="water" class="img-fluid">
+          </div>
+        </div>
+        <--// row -->
+      <!--   </div>
+      </div> 
+      </section> -->
+    <!-- //water -->
+    <!-- falling-down -->
+    <!-- <section class="collection py-lg-4 py-md-3 py-sm-3 py-3">
+      <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+        <h3 class="title mb-lg-5 mb-md-4 mb-sm-4 mb-3">盆裁傾倒偵測</h3>
+        <--row -->
+        <!-- <div class="row"> -->
+        <!--   <div class="col-lg-7 col-md-6 collection-w3layouts">
+              <div class="view-buttn mt-lg-4 mt-3">
+              <a href="falling-down.html" class="">了解更多</a>
+            </div>
+          <-- </div> -->
+          <!-- <div class="col-lg-5 col-md-6">
+            <img src="images/falling-down-icon.jpg" alt="falling-down" class="gif-fluid">
+          </div>
+        </div>
+        <--// row -->
+       <!--</div>
+      </div>
+    </section>  --> 
+    <!-- //falling-down -->
+     <!-- spot -->
+  <section class="blog_w3ls pb-5" id="why">
+    <div class="container pb-xl-5 pb-lg-3">
+          <!-- <div class="row"> -->
+          <iframe width="300" height="300" align="middle" src="http://192.168.0.103:8081" frameborder="0"></iframe>
+          <br/>
+          <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">現場實景</h3>
+          <!-- </div> -->
+    </div>
+  </section>
+  <!--/status-->
+    <!-- //spot -->
+    <!-- footer -->
+    <footer class="py-lg-4 py-md-3 py-sm-3 py-3">
+      <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
+        <div class="footer-w3layouts-head text-center">
+          <h2><a href="index.html">農業物聯網</a></h2>
+        </div>
+        <div class="social-icons mt-lg-5 mt-md-4 mt-3 text-center">
+          <ul>
+            <li><a href="https://www.facebook.com/ittraining.club/"><span class="fa fa-facebook"></span></a></li>
+            <!-- <li><a href="#"><span class="fa fa-twitter"></span></a></li> -->
+            <!-- <li><a href="#"><span class="fa fa-rss"></span></a></li> -->
+            <!-- <li><a href="#"><span class="fa fa-envelope"></span></a></li> -->
+            <!-- <li><a href="#"><span class="fa fa-instagram"></span></a></li> -->
+          </ul>
+        </div>
+        <div class="bottem-wthree-footer text-center pt-md-4 pt-3">
+          <p> © 2019 All Rights Reserved </p>
+        </div>
+        <!-- move icon -->
+        <div class="text-center">
+          <a href="#home" class="move-top text-center mt-3"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+        </div>
+        <!--//move icon -->
+      </div>
+    </footer>
+    <!--//footer -->
+  </body>
+</html>
